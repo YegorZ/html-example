@@ -1,1 +1,18 @@
-<!doctype html><html><body><h1>HELLO!!!!</h1></body></html>
+<!doctype html>
+<html>
+    <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        <script>
+            function makepdf() {
+                const element = document.getElementById('main');
+                html2pdf().from(element).save();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <h1>HELLO!!!!</h1>
+            <button onclick="makepdf()">make pdf</button>
+        </div>
+    </body>
+</html>
