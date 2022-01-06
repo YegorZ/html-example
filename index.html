@@ -5,14 +5,20 @@
         <script>
             function makepdf() {
                 const element = document.getElementById('main');
-                html2pdf().from(element).save();
+                html2pdf().from(element).save('pdf-file-from-html.pdf');
             }
+            function makepdf2() {
+                const element = document.getElementById('main');
+                html2pdf(element);
+            }
+
         </script>
     </head>
     <body>
         <div id="main">
             <h1>HELLO!!!!</h1>
             <button onclick="makepdf()">make pdf</button>
+            <button onclick="makepdf2()">make pdf v 2</button>
         </div>
     </body>
 </html>
