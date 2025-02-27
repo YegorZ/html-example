@@ -1,0 +1,19 @@
+video {
+    width: 100%;
+    max-width: 100vw;
+    max-height: 75vh;
+}
+
+div:first-child {
+    text-align: right;
+    font-size: 6vh;
+}
+
+
+div:nth-child(2) {
+    text-align: center;
+    font-size: 5vh;
+    height: 10vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
